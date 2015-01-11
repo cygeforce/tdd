@@ -6,8 +6,8 @@ namespace SampleProgram
     {
         public static void Main()
         {
-            var game = new Game();
-            // var game = new ComplexGame();
+            // var game = new Game();
+            var game = new ComplexGame();
 
             game.Setup();
             game.Play(15);

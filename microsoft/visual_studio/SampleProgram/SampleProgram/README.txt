@@ -39,4 +39,20 @@ Game Pieces to support:
    { 2, -1 }, 
    { -2, -1 } }
 * Bishop - Moves diagonally, any distance within board boundaries
+*.....*.
+.*...*..
+..*.*...
+...@....
+..*.*...
+.*...*..
+*.....*.
+.......*
 * Queen – Moves diagonally, horizontally or vertically, any distance within board boundaries
+*..*..*.
+.*.*.*..
+..***...
+***@****
+..***...
+.*.*.*..
+*..*..*.
+...*...*

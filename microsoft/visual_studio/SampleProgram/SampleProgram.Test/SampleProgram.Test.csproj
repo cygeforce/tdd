@@ -50,9 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BishopMoveTest.cs" />
+    <Compile Include="KnightMoveTest.cs" />
+    <Compile Include="PositionTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestFixture.cs" />
+    <Compile Include="QueenMoveTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="NUnit\nunit-console-runner.dll" />

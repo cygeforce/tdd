@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ChessLib
 {
-    public class BishopMove : MoveBase
+    public class QueenMove : MoveBase
     {
         public IEnumerable<Position> ValidMovesFor(Position pos)
         {
@@ -18,6 +18,14 @@ namespace ChessLib
                 Position diagonalPosition2 = new Position(pos.X + i, pos.Y - i);
                 if (IsInBoundaries(diagonalPosition2) && IsMoving(pos, diagonalPosition2))
                     yield return diagonalPosition2;
+
+                Position verticalPosition = new Position(pos.X + i, pos.Y);
+                if (IsInBoundaries(verticalPosition) && IsMoving(pos, verticalPosition))
+                    yield return verticalPosition;
+
+                Position horizontalPosition = new Position(pos.X, pos.Y + i);
+                if (IsInBoundaries(horizontalPosition) && IsMoving(pos, horizontalPosition))
+                   yield return horizontalPosition;
             }
         }
     }
